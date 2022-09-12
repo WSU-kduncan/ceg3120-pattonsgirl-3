@@ -13,8 +13,9 @@ GUILD = os.getenv('DISCORD_GUILD')
 
 # dev team looks for commands to do actions.  Message bot just needs to read / respond to messages
 #bot = commands.Bot(command_prefix='-', intents=intents)
+client = discord.Client(intents=intents)
 
-client = discord.Client()
+#client = discord.Client()
 #@bot.event
 @client.event
 async def on_ready():
